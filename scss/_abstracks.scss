@@ -1,0 +1,39 @@
+/** FONTS **/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+/** Variables **/
+$primary-font: 'Raleway',
+sans-serif;
+$secondary-font: 'Yanone Kaffeesatz',
+sans-serif;
+
+$primary-color: #E51515;
+$secondary-color: #14151A;
+$date-color: #FFB320;
+$comment-color: #08abbd;
+$gray-color: #9f9f9f;
+$light-color: #fefefe;
+
+/* UTILITIES */
+.bg {
+    &-dark{
+        background-color: $secondary-color
+    }
+    &-light{
+        background-color: $light-color
+    }
+}
+
+.ml {
+    &-2{
+        margin-left: 2rem;
+    }
+}
+
+/* MIXINS */
+
+@mixin flex-display ($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;   
+}
